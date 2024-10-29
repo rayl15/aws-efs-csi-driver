@@ -3,7 +3,6 @@ name: Container Images
 on: push
 jobs:
   build:
-    # this is to prevent the job to run at forked projects
     if: github.repository == 'rayl15/aws-efs-csi-driver'
     runs-on: ubuntu-latest
     steps:

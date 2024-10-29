@@ -17,7 +17,7 @@ jobs:
       run: |
         BRANCH=$(echo $GITHUB_REF | cut -d'/' -f3)
         SHORT_SHA=$(echo $GITHUB_SHA | cut -c -7)
-        REPO=amazon/aws-efs-csi-driver
+        REPO=rayl17/aws-efs-csi-driver
         if [ "$BRANCH" = "master" ]; then
           TAG=$SHORT_SHA
         else
